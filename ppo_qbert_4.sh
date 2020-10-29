@@ -13,6 +13,6 @@
 
 module load cuda/10.1.243                                       # run any commands necessary to setup your environment
 
-srun bash -c "hostname; python main.py --env-name=BreakoutNoFrameskip-v4 --algo ppo --use-gae --lr 2.5e-4 --clip-param 0.1 --value-loss-coef 0.5 --num-processes 8 --num-steps 128 --num-mini-batch 4 --log-interval 1 --use-linear-lr-decay --entropy-coef 0.01 --log-dir=/fs/classhomes/fall2020/cmsc828w/c828w021/pytorch-a2c-ppo-acktr-gail/ppo_qbert_4/"
+srun bash -c "hostname; python main.py --env-name=QbertNoFrameskip-v4 --algo ppo --use-gae --lr 2.5e-4 --clip-param 0.1 --value-loss-coef 0.5 --num-processes 8 --num-steps 128 --num-mini-batch 4 --log-interval 1 --use-linear-lr-decay --entropy-coef 0.01 --log-dir=/fs/classhomes/fall2020/cmsc828w/c828w021/pytorch-a2c-ppo-acktr-gail/ppo_qbert_4/"
 
 # once the end of the batch script is reached your job allocation will be revoked
