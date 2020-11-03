@@ -5,7 +5,7 @@
 #SBATCH --job-name=acktr_beamrider_seed11                                 # sets the job name
 #SBATCH --output=acktr_beamrider_seed11.out.%j                            # indicates a file to redirect STDOUT to; %j is the jobid 
 #SBATCH --error=acktr_beamrider_seed11.out.%j                             # indicates a file to redirect STDERR to; %j is the jobid
-#SBATCH --time=3:00:00                                          # how long you think your job will take to complete; format=hh:mm:ss
+#SBATCH --time=24:00:00                                          # how long you think your job will take to complete; format=hh:mm:ss
 #SBATCH --qos=default                                           # set QOS, this will determine what resources can be requested
 #SBATCH --partition=class
 #SBATCH --mem=8gb                                               # memory required by job; if unit is not specified MB will be assumed
